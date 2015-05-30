@@ -1,0 +1,18 @@
+H:\i_hate_vb-master\math game 2.0\bin\Release\math game.exe.config
+H:\i_hate_vb-master\math game 2.0\obj\Release\Interop.WMPLib.dll
+H:\i_hate_vb-master\math game 2.0\obj\Release\AxInterop.WMPLib.dll
+H:\i_hate_vb-master\math game 2.0\obj\Release\math game 2.0.vbproj.ResolveComReference.cache
+H:\i_hate_vb-master\math game 2.0\bin\Release\math game.exe
+H:\i_hate_vb-master\math game 2.0\bin\Release\math game.pdb
+H:\i_hate_vb-master\math game 2.0\bin\Release\math game.xml
+H:\i_hate_vb-master\math game 2.0\bin\Release\Interop.WMPLib.dll
+H:\i_hate_vb-master\math game 2.0\bin\Release\AxInterop.WMPLib.dll
+H:\i_hate_vb-master\math game 2.0\obj\Release\math_game_.addition_easy.resources
+H:\i_hate_vb-master\math game 2.0\obj\Release\math_game_.addition_hard.resources
+H:\i_hate_vb-master\math game 2.0\obj\Release\math_game_.addition_medium.resources
+H:\i_hate_vb-master\math game 2.0\obj\Release\math_game_.Form1.resources
+H:\i_hate_vb-master\math game 2.0\obj\Release\math_game_.Resources.resources
+H:\i_hate_vb-master\math game 2.0\obj\Release\math game 2.0.vbproj.GenerateResource.Cache
+H:\i_hate_vb-master\math game 2.0\obj\Release\math game.exe
+H:\i_hate_vb-master\math game 2.0\obj\Release\math game.xml
+H:\i_hate_vb-master\math game 2.0\obj\Release\math game.pdb
