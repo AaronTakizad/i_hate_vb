@@ -41,8 +41,8 @@ Public Class addition_hard
         dataTableScoreDetail.Columns.Add("Time_Elapsed", Type.GetType("System.Int32"))
 
         'Try --------Try Catch for testing purposes
-            dataTableScoreDetail.TableName = "hard_a"
-            dataTableScoreDetail.ReadXml("highScores/hard_a.xml")
+        dataTableScoreDetail.TableName = "easy_a"
+        dataTableScoreDetail.ReadXml("highscores/easy_a.xml")
         'Catch ex As Exception
 
         'End Try
@@ -51,12 +51,11 @@ Public Class addition_hard
 
         Dim view As New DataView(dataTableScoreDetail)
 
-        view.Sort = "correct_counter desc,Time_Elapsed ASC,player_name"
-
-        For Each row As DataRowView In view
-
-            highScores.Items.Add(row.Item("player_name") & "  " & row.Item("correct_counter") & "  " & row.Item("Time_Elapsed") & " sec")
-
+        view.Sort = "correct_counter desc,Time_Elapsed ASC,player_name" ' Sort items first by high score (descending), then by time elapsed (ascending), then by player name (ascending)
+        For Each row As DataRowView In view 'For every row in the XML table
+            If highScores.Items.Count < 3 Then ' If there are less than 3 items in the HighScores listbox, add items. (items sorted already in `view.Sort`)
+                highScores.Items.Add(row.Item("player_name") & "  " & row.Item("correct_counter") & "  " & row.Item("Time_Elapsed") & " sec")
+            End If
         Next
 
 
