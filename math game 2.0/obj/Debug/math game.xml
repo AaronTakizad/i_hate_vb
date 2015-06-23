@@ -32,12 +32,22 @@ math game
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:math_game_.My.Resources.Resources.correct_beep">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
 <member name="P:math_game_.My.Resources.Resources.fireball">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:math_game_.My.Resources.Resources.mw_hud">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:math_game_.My.Resources.Resources.mw_hud_blue">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -50,6 +60,11 @@ math game
 <member name="P:math_game_.My.Resources.Resources.space_681627_1280">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:math_game_.My.Resources.Resources.wrong_beep">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
 </summary>
 </member>
 </members>

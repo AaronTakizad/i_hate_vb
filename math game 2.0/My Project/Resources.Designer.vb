@@ -81,6 +81,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property correct_beep() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("correct_beep", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property fireball() As System.Drawing.Bitmap
@@ -103,6 +112,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property mw_hud_blue() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mw_hud_blue", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property planet() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("planet", resourceCulture)
@@ -117,6 +136,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("space_681627_1280", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property wrong_beep() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("wrong_beep", resourceCulture)
             End Get
         End Property
     End Module

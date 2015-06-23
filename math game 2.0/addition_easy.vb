@@ -22,7 +22,6 @@ Public Class addition_easy
         num1.Text = CInt(Int((10 * Rnd()) + 1))
         Randomize()
         num2.Text = CInt(Int((10 * Rnd()) + 1))
-
         lbl_correct.Text = "Correct: " & correct_counter
         lbl_incorrect.Text = "Incorrect: " & incorrect_counter
         lbl_answered.Text = "Answered: " & answered
@@ -30,6 +29,8 @@ Public Class addition_easy
 
         game_over.Font = New Font(pfc.Families(1), 40)
         game_over.Visible = False
+        header_highscore.Font = New Font(pfc.Families(1), 14)
+        header_game_summary.Font = New Font(pfc.Families(1), 14)
 
         '''''''''''''Setting up Highscores'''''''''''''''''
 
@@ -67,15 +68,19 @@ Public Class addition_easy
 
     Private Sub submit_btn_Click(sender As Object, e As EventArgs) Handles submit_btn.Click
         If Val(answer_box.Text) = Val(num1.Text) + Val(num2.Text) Then
+            My.Computer.Audio.Play(My.Resources.correct_beep, AudioPlayMode.Background)
             answer.ForeColor = Color.Green
+            answer.Location = New Point(152, 128)
             answer.Text = "Great job!"
             correct_counter += 1
             dynamic_travel_distance = total_travel_distance / GlobalVariables.question_count
             spacecraft_img.Left += dynamic_travel_distance
             total_travel_distance -= dynamic_travel_distance
         Else
+            My.Computer.Audio.Play(My.Resources.wrong_beep, AudioPlayMode.Background)
             answer.ForeColor = Color.Red
-            answer.Text = "The answer was " & Val(num1.Text) + Val(num2.Text)
+            answer.Location = New Point(152, 128)
+            answer.Text = "The answer" & vbCrLf & "was: " & Val(num1.Text) + Val(num2.Text)
             incorrect_counter += 1
         End If
         answer_box.Text = ""
@@ -94,15 +99,17 @@ Public Class addition_easy
             num2.Text = CInt(Int((10 * Rnd()) + 1))
         Else
             Me.Refresh()
-            Threading.Thread.Sleep(1000)
             spacecraft_img.Visible = False
             planet_img.Visible = False
+            answer_box.Enabled = False
+            submit_btn.Enabled = False
+            Threading.Thread.Sleep(800)
             For i As Integer = 0 To 2
                 Me.Refresh()
-                Threading.Thread.Sleep(500)
+                Threading.Thread.Sleep(400)
                 game_over.Visible = False
                 Me.Refresh()
-                Threading.Thread.Sleep(500)
+                Threading.Thread.Sleep(400)
                 game_over.Visible = True
                 Me.Refresh()
             Next

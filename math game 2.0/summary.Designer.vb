@@ -30,7 +30,7 @@ Partial Class summary
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(451, 359)
         Me.Name = "summary"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Maths on Mars: Game Summary"
         Me.ResumeLayout(False)
 

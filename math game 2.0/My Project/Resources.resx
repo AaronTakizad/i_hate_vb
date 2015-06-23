@@ -124,16 +124,25 @@
   <data name="bg5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\bg5.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="correct_beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correct_beep.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\fireball.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mw_hud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mw_hud.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mw_hud_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mw_hud_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="planet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\images\planet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="space_681627_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\space-681627_1280.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrong_beep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrong_beep.wav;System.IO.MemoryStream, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
