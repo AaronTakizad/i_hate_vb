@@ -1,10 +1,12 @@
 ﻿Imports System.Drawing.Text
 Imports System.IO
+Public Module public_a_e
+    Public correct_counter As Integer = 0
+    Public answered As Integer = 0
+End Module
 Public Class addition_easy
     Dim pfc As PrivateFontCollection = New PrivateFontCollection()
-    Dim correct_counter As Integer = 0
     Dim incorrect_counter As Integer = 0
-    Dim answered As Integer = 0
     Dim total_travel_distance As Integer = 409
     Dim dynamic_travel_distance As Integer
     Dim time_passed As Integer = 0
