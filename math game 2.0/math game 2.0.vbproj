@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>math_game_.My.MyApplication</StartupObject>
     <RootNamespace>math_game_</RootNamespace>
-    <AssemblyName>math game</AssemblyName>
+    <AssemblyName>Maths on Mars</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -36,7 +36,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>math game.xml</DocumentationFile>
+    <DocumentationFile>Maths on Mars.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -47,7 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>math game.xml</DocumentationFile>
+    <DocumentationFile>Maths on Mars.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
@@ -62,6 +62,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -275,6 +278,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wrong_beep.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

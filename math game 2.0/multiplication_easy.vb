@@ -10,14 +10,13 @@ Public Class multiplication_easy
     Dim time_passed As Integer = 0
     Dim dataTableScoreDetail As New DataTable
 
-
     Private Sub multiplication_easy_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Timer1.Start()
 
         pfc.AddFontFile("fonts/ethnocentric.ttf")
         pfc.AddFontFile("fonts/aroma-light.ttf")
 
-        welcome.Text = "Welcome to the maths game, " & GlobalVariables.player_name & "! You selected Easy Multiplication."
+        welcome.Text = "Welcome to Maths on Mars, " & GlobalVariables.player_name & "!" & vbCrLf & "You're playing Easy Multiplication."
         Randomize()
         num1.Text = CInt(Int((10 * Rnd()) + 1))
         Randomize()
@@ -31,6 +30,8 @@ Public Class multiplication_easy
         game_over.Font = New Font(pfc.Families(1), 40)
         game_over.Visible = False
 
+        header_highscore.Font = New Font(pfc.Families(1), 14)
+        header_game_summary.Font = New Font(pfc.Families(1), 14)
 
         '''''''''''''Setting up Highscores'''''''''''''''''
 
@@ -41,8 +42,8 @@ Public Class multiplication_easy
         dataTableScoreDetail.Columns.Add("Time_Elapsed", Type.GetType("System.Int32"))
 
         'Try --------Try Catch for testing purposes
-        dataTableScoreDetail.TableName = "easy_a"
-        dataTableScoreDetail.ReadXml("highscores/easy_a.xml")
+        dataTableScoreDetail.TableName = "easy_m"
+        dataTableScoreDetail.ReadXml("highscores/easy_m.xml")
         'Catch ex As Exception
 
         'End Try
@@ -50,6 +51,8 @@ Public Class multiplication_easy
 
 
         Dim view As New DataView(dataTableScoreDetail)
+
+        highScores.Items.Add("Name:" & Chr(9) & "Score:" & Chr(9) & "Time:")
 
         view.Sort = "correct_counter desc,Time_Elapsed ASC,player_name" ' Sort items first by high score (descending), then by time elapsed (ascending), then by player name (ascending)
         For Each row As DataRowView In view 'For every row in the XML table
@@ -64,17 +67,21 @@ Public Class multiplication_easy
 
     End Sub
 
-    Private Sub submit_btn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles submit_btn.Click
+    Private Sub submit_btn_Click(sender As Object, e As EventArgs) Handles submit_btn.Click
         If Val(answer_box.Text) = Val(num1.Text) * Val(num2.Text) Then
+            My.Computer.Audio.Play(My.Resources.correct_beep, AudioPlayMode.Background)
             answer.ForeColor = Color.Green
+            answer.Location = New Point(152, 128)
             answer.Text = "Great job!"
             correct_counter += 1
             dynamic_travel_distance = total_travel_distance / GlobalVariables.question_count
             spacecraft_img.Left += dynamic_travel_distance
             total_travel_distance -= dynamic_travel_distance
         Else
+            My.Computer.Audio.Play(My.Resources.wrong_beep, AudioPlayMode.Background)
             answer.ForeColor = Color.Red
-            answer.Text = "The answer was " & Val(num1.Text) + Val(num2.Text)
+            answer.Location = New Point(152, 128)
+            answer.Text = "The answer" & vbCrLf & "was: " & Val(num1.Text) * Val(num2.Text)
             incorrect_counter += 1
         End If
         answer_box.Text = ""
@@ -93,15 +100,17 @@ Public Class multiplication_easy
             num2.Text = CInt(Int((10 * Rnd()) + 1))
         Else
             Me.Refresh()
-            Threading.Thread.Sleep(1000)
             spacecraft_img.Visible = False
             planet_img.Visible = False
+            answer_box.Enabled = False
+            submit_btn.Enabled = False
+            Threading.Thread.Sleep(800)
             For i As Integer = 0 To 2
                 Me.Refresh()
-                Threading.Thread.Sleep(500)
+                Threading.Thread.Sleep(400)
                 game_over.Visible = False
                 Me.Refresh()
-                Threading.Thread.Sleep(500)
+                Threading.Thread.Sleep(400)
                 game_over.Visible = True
                 Me.Refresh()
             Next
@@ -116,8 +125,8 @@ Public Class multiplication_easy
             Me.Hide()
 
             'Try [FOR TESTING]
-            dataTableScoreDetail.TableName = "easy_m"
-            dataTableScoreDetail.WriteXml("highscores/easy_m.xml")
+            dataTableScoreDetail.TableName = "easy_a"
+            dataTableScoreDetail.WriteXml("highscores/easy_a.xml")
             'Catch ex As Exception
 
             'End Try
@@ -125,7 +134,7 @@ Public Class multiplication_easy
             summary.Show()
         End If
     End Sub
-    Private Sub close_program(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.FormClosed
+    Private Sub close_program(sender As Object, e As EventArgs) Handles MyBase.FormClosed
         Application.Exit()
     End Sub
 
@@ -135,7 +144,7 @@ Public Class multiplication_easy
         End If
     End Sub
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
         time_passed += 1
         lbl_time.Text = "Time Elapsed: " & time_passed
     End Sub

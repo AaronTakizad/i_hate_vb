@@ -10,10 +10,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("math game 2.0")> 
+<Assembly: AssemblyTitle("Maths on Mars")>
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("math game 2.0")> 
+<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyProduct("Maths on Mars: The Game")>
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 

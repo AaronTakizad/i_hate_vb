@@ -46,6 +46,7 @@ Partial Class addition_easy
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.header_game_summary = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.planet_img, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.spacecraft_img, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -54,20 +55,24 @@ Partial Class addition_easy
         '
         'answer_box
         '
-        Me.answer_box.Location = New System.Drawing.Point(309, 226)
+        Me.answer_box.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.answer_box.Location = New System.Drawing.Point(339, 228)
         Me.answer_box.MaxLength = 5
         Me.answer_box.Name = "answer_box"
-        Me.answer_box.Size = New System.Drawing.Size(100, 20)
+        Me.answer_box.Size = New System.Drawing.Size(100, 26)
         Me.answer_box.TabIndex = 21
         '
         'submit_btn
         '
-        Me.submit_btn.Location = New System.Drawing.Point(461, 223)
+        Me.submit_btn.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(154, Byte), Integer))
+        Me.submit_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.submit_btn.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.submit_btn.Location = New System.Drawing.Point(458, 228)
         Me.submit_btn.Name = "submit_btn"
-        Me.submit_btn.Size = New System.Drawing.Size(75, 23)
+        Me.submit_btn.Size = New System.Drawing.Size(82, 26)
         Me.submit_btn.TabIndex = 20
         Me.submit_btn.Text = "Submit"
-        Me.submit_btn.UseVisualStyleBackColor = True
+        Me.submit_btn.UseVisualStyleBackColor = False
         '
         'answer
         '
@@ -82,39 +87,47 @@ Partial Class addition_easy
         '
         Me.plus.AutoSize = True
         Me.plus.BackColor = System.Drawing.Color.Transparent
-        Me.plus.Location = New System.Drawing.Point(217, 229)
+        Me.plus.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.plus.Location = New System.Drawing.Point(235, 229)
         Me.plus.Name = "plus"
-        Me.plus.Size = New System.Drawing.Size(13, 13)
+        Me.plus.Size = New System.Drawing.Size(21, 22)
         Me.plus.TabIndex = 18
         Me.plus.Text = "+"
+        Me.plus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'num2
         '
         Me.num2.AutoSize = True
         Me.num2.BackColor = System.Drawing.Color.Transparent
-        Me.num2.Location = New System.Drawing.Point(247, 229)
+        Me.num2.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.num2.Location = New System.Drawing.Point(265, 229)
         Me.num2.Name = "num2"
-        Me.num2.Size = New System.Drawing.Size(33, 13)
+        Me.num2.Size = New System.Drawing.Size(54, 22)
         Me.num2.TabIndex = 17
         Me.num2.Text = "num2"
+        Me.num2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'num1
         '
         Me.num1.AutoSize = True
         Me.num1.BackColor = System.Drawing.Color.Transparent
-        Me.num1.Location = New System.Drawing.Point(178, 229)
+        Me.num1.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.num1.Location = New System.Drawing.Point(199, 229)
         Me.num1.Name = "num1"
-        Me.num1.Size = New System.Drawing.Size(33, 13)
+        Me.num1.Size = New System.Drawing.Size(54, 22)
         Me.num1.TabIndex = 16
         Me.num1.Text = "num1"
+        Me.num1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'welcome
         '
         Me.welcome.AutoSize = True
         Me.welcome.BackColor = System.Drawing.Color.Transparent
-        Me.welcome.Location = New System.Drawing.Point(59, 55)
+        Me.welcome.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.welcome.ForeColor = System.Drawing.Color.Tomato
+        Me.welcome.Location = New System.Drawing.Point(10, 9)
         Me.welcome.Name = "welcome"
-        Me.welcome.Size = New System.Drawing.Size(76, 13)
+        Me.welcome.Size = New System.Drawing.Size(142, 22)
         Me.welcome.TabIndex = 15
         Me.welcome.Text = "Welcome Text"
         '
@@ -281,12 +294,25 @@ Partial Class addition_easy
         Me.header_game_summary.TabIndex = 30
         Me.header_game_summary.Text = "Game Summary:"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Courier New", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(297, 229)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(21, 22)
+        Me.Label1.TabIndex = 35
+        Me.Label1.Text = "="
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
         'addition_easy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(735, 588)
+        Me.ClientSize = New System.Drawing.Size(736, 588)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.answer_box)
@@ -298,6 +324,7 @@ Partial Class addition_easy
         Me.Controls.Add(Me.game_over)
         Me.Controls.Add(Me.planet_img)
         Me.Controls.Add(Me.spacecraft_img)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "addition_easy"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Maths Game: Easy Addition"
@@ -333,4 +360,5 @@ Partial Class addition_easy
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents header_game_summary As Label
+    Friend WithEvents Label1 As Label
 End Class

@@ -126,16 +126,9 @@ H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.multiplication_easy.resou
 H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.multiplication_hard.resources
 H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.multiplication_medium.resources
 H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.summary.resources
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.exe.config
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Interop.WMPLib.dll
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game 2.0.vbproj.ResolveComReference.cache
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game.exe
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game.xml
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game.pdb
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.exe
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.pdb
-C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.xml
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Interop.WMPLib.dll
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game 2.0.vbprojResolveAssemblyReference.cache
@@ -150,3 +143,10 @@ C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.multiplicati
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.Resources.resources
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.summary.resources
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game 2.0.vbproj.GenerateResource.Cache
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Maths on Mars.exe.config
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Maths on Mars.exe
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Maths on Mars.pdb
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Maths on Mars.xml
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Maths on Mars.exe
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Maths on Mars.xml
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Maths on Mars.pdb

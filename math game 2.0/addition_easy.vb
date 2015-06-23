@@ -10,24 +10,26 @@ Public Class addition_easy
     Dim time_passed As Integer = 0
     Dim dataTableScoreDetail As New DataTable
 
-
     Private Sub addition_easy_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         Timer1.Start()
 
         pfc.AddFontFile("fonts/ethnocentric.ttf")
         pfc.AddFontFile("fonts/aroma-light.ttf")
 
-        welcome.Text = "Welcome to the maths game, " & GlobalVariables.player_name & "! You selected Easy Addition."
+        welcome.Text = "Welcome to Maths on Mars, " & GlobalVariables.player_name & "!" & vbCrLf & "You're playing Easy Addition."
         Randomize()
         num1.Text = CInt(Int((10 * Rnd()) + 1))
         Randomize()
         num2.Text = CInt(Int((10 * Rnd()) + 1))
+
         lbl_correct.Text = "Correct: " & correct_counter
         lbl_incorrect.Text = "Incorrect: " & incorrect_counter
         lbl_answered.Text = "Answered: " & answered
         lbl_remaining.Text = "Remaining: " & GlobalVariables.question_count
+
         game_over.Font = New Font(pfc.Families(1), 40)
         game_over.Visible = False
+
         header_highscore.Font = New Font(pfc.Families(1), 14)
         header_game_summary.Font = New Font(pfc.Families(1), 14)
 

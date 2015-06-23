@@ -1,0 +1,67 @@
+BEGIN start_screen
+    Get player_name from user
+    Get question_count from user
+    Get help from user
+    Get game_difficulty from user
+    Get game_type from user
+    IF help = true
+        Call help_module
+    END IF
+    CASEWHERE game_difficulty:
+        easy:
+            CASEWHERE game_type:
+                addition: Call easy_addition
+                multiplication: Call easy_multiplication
+            ENDCASE
+        medium:
+            CASEWHERE game_type:
+                addition: Call medium_addition
+                multiplication: Call medium_multiplication
+            ENDCASE
+        hard:
+            CASEWHERE game_type:
+                addition: Call hard_addition
+                multiplication: Call hard_multiplication
+            ENDCASE
+    ENDCASE
+END
+
+BEGIN easy_addition
+    Let rnd_num_one = random integer between 1 and 10
+    Let rnd_num_two = random integer between 1 and 10
+    Let timer_status = true
+    Let time_counter = 0
+    Open easy_addition_highscores for read
+        Sort easy_addition_highscores descending
+    Close easy_addition_highscores
+    Let i = 1
+    REPEAT
+        Display easy_addition_highscores(i)
+        i = i + 1
+    UNTIIL i > 4
+    Display player_name
+    questions_remaining = question_count
+    WHILE question_count > 0
+        IF timer_status = true
+            wait 1 second
+            time_counter += 1
+        END IF
+        Get answer from user
+        IF answer = rnd_num_one + rnd_num_two
+            Display "Correct!"
+            correct_counter = correct_counter + 1
+        ELSE
+            Display "Incorrect! The answer was " + ( rnd_num_one + rnd_num_two )
+            incorrect_counter = incorrect_counter + 1
+        END IF
+        questions_remining = questions_remaining - 1
+        total_questions_answered = total_questions_answered + 1
+        rnd_num_one = random integer between 1 and 10
+        rnd_num_two = random integer between 1 and 10
+    Display "Game over!"
+    Open easy_addition_highscores for append
+        IF correct_counter > easy_additon_highscores(3)
+            Write easy_addition_highscores from player_name, correct_counter, time_counter
+        END IF 
+    Close easy_ddition_highscores
+END
