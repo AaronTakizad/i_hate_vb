@@ -10,12 +10,15 @@ Public Class Form1
     Dim level_group_val As Boolean = False
     Dim player_name_val As Boolean = False
     Dim num_of_q_val As Boolean = False
+    Dim time_elapsed As Integer = 0
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pfc.AddFontFile("fonts/ethnocentric.ttf")
         pfc.AddFontFile("fonts/aroma-light.ttf")
         start_btn.Enabled = False
         Label1.Font = New Font(pfc.Families(1), 24)
+        Label6.Font = New Font(pfc.Families(1), 30)
         possible_errors.Font = New Font(pfc.Families(0), 20)
+        Timer1.Start()
     End Sub
     Private Sub player_name_Enter(sender As Object, e As EventArgs) Handles player_name_tb.TextChanged
         If player_name_val = False Then
@@ -113,5 +116,13 @@ Public Class Form1
 
     Private Sub close_program(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.FormClosed
         Application.Exit()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        time_elapsed += 1
+        If time_elapsed >= 5 Then
+            Panel1.Visible = False
+            Timer1.Stop()
+        End If
     End Sub
 End Class

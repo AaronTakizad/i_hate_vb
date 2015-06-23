@@ -26,7 +26,6 @@ Public Class addition_easy
         lbl_incorrect.Text = "Incorrect: " & incorrect_counter
         lbl_answered.Text = "Answered: " & answered
         lbl_remaining.Text = "Remaining: " & GlobalVariables.question_count
-
         game_over.Font = New Font(pfc.Families(1), 40)
         game_over.Visible = False
         header_highscore.Font = New Font(pfc.Families(1), 14)
