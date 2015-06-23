@@ -157,3 +157,21 @@ C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math game 2.0.vbpro
 C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Maths on Mars.exe
 C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Maths on Mars.xml
 C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Maths on Mars.pdb
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\bin\Debug\Maths on Mars.exe
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\bin\Debug\Maths on Mars.pdb
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\bin\Debug\Maths on Mars.xml
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\bin\Debug\Interop.WMPLib.dll
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math game 2.0.vbprojResolveAssemblyReference.cache
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.addition_easy.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.addition_hard.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.addition_medium.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.Form1.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.help.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.multiplication_easy.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.multiplication_hard.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.multiplication_medium.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.Resources.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.over80_summary.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math_game_.under80_summary.resources
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math game 2.0.vbproj.GenerateResource.Cache
