@@ -1,4 +1,7 @@
 BEGIN start_screen
+    Display splash
+    Wait 1 second
+    Hide splash
     Get player_name from user
     Get question_count from user
     Get help from user
@@ -29,39 +32,408 @@ END
 BEGIN easy_addition
     Let rnd_num_one = random integer between 1 and 10
     Let rnd_num_two = random integer between 1 and 10
+    Let correct_counter = 0
+    Let incorrect_counter = 0
+    Let answered = 0
+    Get player_name from start_screen
+    Get question_count from start_screen
+    Let questions_remaining = question_count
     Let timer_status = true
-    Let time_counter = 0
+    Let time_passed = 0
+    Let correct_answer = 0
+
     Open easy_addition_highscores for read
         Sort easy_addition_highscores descending
     Close easy_addition_highscores
     Let i = 1
+
     REPEAT
         Display easy_addition_highscores(i)
         i = i + 1
     UNTIIL i > 4
-    Display player_name
-    questions_remaining = question_count
-    WHILE question_count > 0
+
+    WHILE questions_remaining > 0
+        Display player_name
+        Display correct_counter
+        Display incorrect_counter
+        Display questions_answered
+        Display questions_remaining
+        Display time_passed
+
+
         IF timer_status = true
             wait 1 second
-            time_counter += 1
+            time_passed += 1
         END IF
+
+        correct_answer = rnd_num_one + rnd_num_two
         Get answer from user
-        IF answer = rnd_num_one + rnd_num_two
+
+        IF answer = correct_answer
             Display "Correct!"
             correct_counter = correct_counter + 1
         ELSE
-            Display "Incorrect! The answer was " + ( rnd_num_one + rnd_num_two )
+            Display "Incorrect!"
+            Display correct_answer
             incorrect_counter = incorrect_counter + 1
         END IF
+
         questions_remining = questions_remaining - 1
-        total_questions_answered = total_questions_answered + 1
+        questions_answered = total_questions_answered + 1
+
         rnd_num_one = random integer between 1 and 10
         rnd_num_two = random integer between 1 and 10
+    END WHILE
     Display "Game over!"
+
     Open easy_addition_highscores for append
         IF correct_counter > easy_additon_highscores(3)
-            Write easy_addition_highscores from player_name, correct_counter, time_counter
-        END IF 
-    Close easy_ddition_highscores
+            Write easy_addition_highscores from player_name, correct_counter, time_passed
+        END IF
+    Close easy_addition_highscores
+
+    Call game_summary
+
+END
+
+
+BEGIN medium_addition
+    Let rnd_num_one = random integer between 1 and 25
+    Let rnd_num_two = random integer between 1 and 25
+    Let correct_counter = 0
+    Let incorrect_counter = 0
+    Let answered = 0
+    Get player_name from start_screen
+    Get question_count from start_screen
+    Let questions_remaining = question_count
+    Let timer_status = true
+    Let time_passed = 0
+    Let correct_answer = 0
+
+    Open medium_addition_highscores for read
+        Sort medium_addition_highscores descending
+    Close medium_addition_highscores
+    Let i = 1
+
+    REPEAT
+        Display medium_addition_highscores(i)
+        i = i + 1
+    UNTIIL i > 4
+
+    WHILE questions_remaining > 0
+        Display player_name
+        Display correct_counter
+        Display incorrect_counter
+        Display questions_answered
+        Display questions_remaining
+        Display time_passed
+
+
+        IF timer_status = true
+            wait 1 second
+            time_passed += 1
+        END IF
+
+        correct_answer = rnd_num_one + rnd_num_two
+        Get answer from user
+
+        IF answer = correct_answer
+            Display "Correct!"
+            correct_counter = correct_counter + 1
+        ELSE
+            Display "Incorrect!"
+            Display correct_answer
+            incorrect_counter = incorrect_counter + 1
+        END IF
+
+        questions_remining = questions_remaining - 1
+        questions_answered = total_questions_answered + 1
+
+        rnd_num_one = random integer between 1 and 25
+        rnd_num_two = random integer between 1 and 25
+    END WHILE
+    Display "Game over!"
+
+    Open medium_addition_highscores for append
+        IF correct_counter > medium_additon_highscores(3)
+            Write medium_addition_highscores from player_name, correct_counter, time_passed
+        END IF
+    Close medium_addition_highscores
+
+    Call game_summary
+
+END
+
+
+
+BEGIN hard_addition
+    Let rnd_num_one = random integer between 1 and 100
+    Let rnd_num_two = random integer between 1 and 100
+    Let correct_counter = 0
+    Let incorrect_counter = 0
+    Let answered = 0
+    Get player_name from start_screen
+    Get question_count from start_screen
+    Let questions_remaining = question_count
+    Let timer_status = true
+    Let time_passed = 0
+    Let correct_answer = 0
+
+    Open hard_addition_highscores for read
+        Sort hard_addition_highscores descending
+    Close hard_addition_highscores
+    Let i = 1
+
+    REPEAT
+        Display hard_addition_highscores(i)
+        i = i + 1
+    UNTIIL i > 4
+
+    WHILE questions_remaining > 0
+        Display player_name
+        Display correct_counter
+        Display incorrect_counter
+        Display questions_answered
+        Display questions_remaining
+        Display time_passed
+
+
+        IF timer_status = true
+            wait 1 second
+            time_passed += 1
+        END IF
+
+        correct_answer = rnd_num_one + rnd_num_two
+        Get answer from user
+
+        IF answer = correct_answer
+            Display "Correct!"
+            correct_counter = correct_counter + 1
+        ELSE
+            Display "Incorrect!"
+            Display correct_answer
+            incorrect_counter = incorrect_counter + 1
+        END IF
+
+        questions_remining = questions_remaining - 1
+        questions_answered = total_questions_answered + 1
+
+        rnd_num_one = random integer between 1 and 100
+        rnd_num_two = random integer between 1 and 100
+    END WHILE
+    Display "Game over!"
+
+    Open hard_addition_highscores for append
+        IF correct_counter > hard_additon_highscores(3)
+            Write hard_addition_highscores from player_name, correct_counter, time_passed
+        END IF
+    Close hard_addition_highscores
+
+    Call game_summary
+
+END
+
+
+BEGIN easy_multiplication
+    Let rnd_num_one = random integer between 1 and 10
+    Let rnd_num_two = random integer between 1 and 10
+    Let correct_counter = 0
+    Let incorrect_counter = 0
+    Let answered = 0
+    Get player_name from start_screen
+    Get question_count from start_screen
+    Let questions_remaining = question_count
+    Let timer_status = true
+    Let time_passed = 0
+    Let correct_answer = 0
+
+    Open easy_multiplication_highscores for read
+        Sort easy_multiplication_highscores descending
+    Close easy_multiplication_highscores
+    Let i = 1
+
+    REPEAT
+        Display easy_multiplication_highscores(i)
+        i = i + 1
+    UNTIIL i > 4
+
+    WHILE questions_remaining > 0
+        Display player_name
+        Display correct_counter
+        Display incorrect_counter
+        Display questions_answered
+        Display questions_remaining
+        Display time_passed
+
+
+        IF timer_status = true
+            wait 1 second
+            time_passed += 1
+        END IF
+
+        correct_answer = rnd_num_one + rnd_num_two
+        Get answer from user
+
+        IF answer = correct_answer
+            Display "Correct!"
+            correct_counter = correct_counter + 1
+        ELSE
+            Display "Incorrect!"
+            Display correct_answer
+            incorrect_counter = incorrect_counter + 1
+        END IF
+
+        questions_remining = questions_remaining - 1
+        questions_answered = total_questions_answered + 1
+
+        rnd_num_one = random integer between 1 and 10
+        rnd_num_two = random integer between 1 and 10
+    END WHILE
+    Display "Game over!"
+
+    Open easy_multiplication_highscores for append
+        IF correct_counter > easy_multiplication_highscores(3)
+            Write easy_multiplication_highscores from player_name, correct_counter, time_passed
+        END IF
+    Close easy_multiplication_highscores
+
+    Call game_summary
+
+END
+
+
+BEGIN medium_multiplication
+    Let rnd_num_one = random integer between 1 and 25
+    Let rnd_num_two = random integer between 1 and 25
+    Let correct_counter = 0
+    Let incorrect_counter = 0
+    Let answered = 0
+    Get player_name from start_screen
+    Get question_count from start_screen
+    Let questions_remaining = question_count
+    Let timer_status = true
+    Let time_passed = 0
+    Let correct_answer = 0
+
+    Open medium_multiplication_highscores for read
+        Sort medium_multiplication_highscores descending
+    Close medium_multiplication_highscores
+    Let i = 1
+
+    REPEAT
+        Display medium_multiplication_highscores(i)
+        i = i + 1
+    UNTIIL i > 4
+
+    WHILE questions_remaining > 0
+        Display player_name
+        Display correct_counter
+        Display incorrect_counter
+        Display questions_answered
+        Display questions_remaining
+        Display time_passed
+
+
+        IF timer_status = true
+            wait 1 second
+            time_passed += 1
+        END IF
+
+        correct_answer = rnd_num_one + rnd_num_two
+        Get answer from user
+
+        IF answer = correct_answer
+            Display "Correct!"
+            correct_counter = correct_counter + 1
+        ELSE
+            Display "Incorrect!"
+            Display correct_answer
+            incorrect_counter = incorrect_counter + 1
+        END IF
+
+        questions_remining = questions_remaining - 1
+        questions_answered = total_questions_answered + 1
+
+        rnd_num_one = random integer between 1 and 25
+        rnd_num_two = random integer between 1 and 25
+    END WHILE
+    Display "Game over!"
+
+    Open medium_multiplication_highscores for append
+        IF correct_counter > medium_multiplication_highscores(3)
+            Write medium_multiplication_highscores from player_name, correct_counter, time_passed
+        END IF
+    Close medium_multiplication_highscores
+
+    Call game_summary
+
+END
+
+
+
+BEGIN hard_multiplication
+    Let rnd_num_one = random integer between 1 and 100
+    Let rnd_num_two = random integer between 1 and 100
+    Let correct_counter = 0
+    Let incorrect_counter = 0
+    Let answered = 0
+    Get player_name from start_screen
+    Get question_count from start_screen
+    Let questions_remaining = question_count
+    Let timer_status = true
+    Let time_passed = 0
+    Let correct_answer = 0
+
+    Open hard_multiplication_highscores for read
+        Sort hard_multiplication_highscores descending
+    Close hard_multiplication_highscores
+    Let i = 1
+
+    REPEAT
+        Display hard_multiplication_highscores(i)
+        i = i + 1
+    UNTIIL i > 4
+
+    WHILE questions_remaining > 0
+        Display player_name
+        Display correct_counter
+        Display incorrect_counter
+        Display questions_answered
+        Display questions_remaining
+        Display time_passed
+
+
+        IF timer_status = true
+            wait 1 second
+            time_passed += 1
+        END IF
+
+        correct_answer = rnd_num_one + rnd_num_two
+        Get answer from user
+
+        IF answer = correct_answer
+            Display "Correct!"
+            correct_counter = correct_counter + 1
+        ELSE
+            Display "Incorrect!"
+            Display correct_answer
+            incorrect_counter = incorrect_counter + 1
+        END IF
+
+        questions_remining = questions_remaining - 1
+        questions_answered = total_questions_answered + 1
+
+        rnd_num_one = random integer between 1 and 100
+        rnd_num_two = random integer between 1 and 100
+    END WHILE
+    Display "Game over!"
+
+    Open hard_multiplication_highscores for append
+        IF correct_counter > hard_multiplication_highscores(3)
+            Write hard_multiplication_highscores from player_name, correct_counter, time_passed
+        END IF
+    Close hard_multiplication_highscores
+
+    Call game_summary
+
 END
