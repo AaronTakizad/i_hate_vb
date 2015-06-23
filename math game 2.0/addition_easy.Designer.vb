@@ -37,28 +37,29 @@ Partial Class addition_easy
         Me.lbl_remaining = New System.Windows.Forms.Label()
         Me.lbl_incorrect = New System.Windows.Forms.Label()
         Me.lbl_correct = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.highScores = New System.Windows.Forms.ListBox()
         Me.header_highscore = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.lbl_time = New System.Windows.Forms.Label()
         Me.planet_img = New System.Windows.Forms.PictureBox()
         Me.spacecraft_img = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.planet_img, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.spacecraft_img, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'answer_box
         '
-        Me.answer_box.Location = New System.Drawing.Point(361, 260)
+        Me.answer_box.Location = New System.Drawing.Point(452, 257)
+        Me.answer_box.MaxLength = 5
         Me.answer_box.Name = "answer_box"
         Me.answer_box.Size = New System.Drawing.Size(100, 20)
         Me.answer_box.TabIndex = 21
         '
         'submit_btn
         '
-        Me.submit_btn.Location = New System.Drawing.Point(513, 257)
+        Me.submit_btn.Location = New System.Drawing.Point(604, 254)
         Me.submit_btn.Name = "submit_btn"
         Me.submit_btn.Size = New System.Drawing.Size(75, 23)
         Me.submit_btn.TabIndex = 20
@@ -68,7 +69,7 @@ Partial Class addition_easy
         'answer
         '
         Me.answer.AutoSize = True
-        Me.answer.Location = New System.Drawing.Point(230, 352)
+        Me.answer.Location = New System.Drawing.Point(358, 334)
         Me.answer.Name = "answer"
         Me.answer.Size = New System.Drawing.Size(41, 13)
         Me.answer.TabIndex = 19
@@ -77,7 +78,8 @@ Partial Class addition_easy
         'plus
         '
         Me.plus.AutoSize = True
-        Me.plus.Location = New System.Drawing.Point(269, 263)
+        Me.plus.BackColor = System.Drawing.Color.Transparent
+        Me.plus.Location = New System.Drawing.Point(360, 260)
         Me.plus.Name = "plus"
         Me.plus.Size = New System.Drawing.Size(13, 13)
         Me.plus.TabIndex = 18
@@ -86,7 +88,8 @@ Partial Class addition_easy
         'num2
         '
         Me.num2.AutoSize = True
-        Me.num2.Location = New System.Drawing.Point(299, 263)
+        Me.num2.BackColor = System.Drawing.Color.Transparent
+        Me.num2.Location = New System.Drawing.Point(390, 260)
         Me.num2.Name = "num2"
         Me.num2.Size = New System.Drawing.Size(33, 13)
         Me.num2.TabIndex = 17
@@ -95,7 +98,8 @@ Partial Class addition_easy
         'num1
         '
         Me.num1.AutoSize = True
-        Me.num1.Location = New System.Drawing.Point(230, 263)
+        Me.num1.BackColor = System.Drawing.Color.Transparent
+        Me.num1.Location = New System.Drawing.Point(321, 260)
         Me.num1.Name = "num1"
         Me.num1.Size = New System.Drawing.Size(33, 13)
         Me.num1.TabIndex = 16
@@ -166,30 +170,27 @@ Partial Class addition_easy
         Me.lbl_correct.TabIndex = 22
         Me.lbl_correct.Text = "Correct:"
         '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.highScores)
-        Me.Panel1.Controls.Add(Me.header_highscore)
-        Me.Panel1.Location = New System.Drawing.Point(28, 233)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(171, 234)
-        Me.Panel1.TabIndex = 29
-        '
         'highScores
         '
+        Me.highScores.BackColor = System.Drawing.Color.FromArgb(CType(CType(18, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(18, Byte), Integer))
+        Me.highScores.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.highScores.Font = New System.Drawing.Font("Courier New", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.highScores.ForeColor = System.Drawing.Color.Transparent
         Me.highScores.FormattingEnabled = True
-        Me.highScores.Location = New System.Drawing.Point(17, 37)
+        Me.highScores.ItemHeight = 18
+        Me.highScores.Location = New System.Drawing.Point(21, 63)
         Me.highScores.Name = "highScores"
-        Me.highScores.Size = New System.Drawing.Size(142, 173)
+        Me.highScores.Size = New System.Drawing.Size(251, 198)
         Me.highScores.TabIndex = 30
         '
         'header_highscore
         '
         Me.header_highscore.AutoSize = True
-        Me.header_highscore.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.header_highscore.Location = New System.Drawing.Point(13, 11)
+        Me.header_highscore.BackColor = System.Drawing.Color.Transparent
+        Me.header_highscore.Font = New System.Drawing.Font("Courier New", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.header_highscore.Location = New System.Drawing.Point(17, 20)
         Me.header_highscore.Name = "header_highscore"
-        Me.header_highscore.Size = New System.Drawing.Size(112, 20)
+        Me.header_highscore.Size = New System.Drawing.Size(166, 23)
         Me.header_highscore.TabIndex = 30
         Me.header_highscore.Text = "High Scores:"
         '
@@ -201,7 +202,7 @@ Partial Class addition_easy
         'lbl_time
         '
         Me.lbl_time.AutoSize = True
-        Me.lbl_time.Location = New System.Drawing.Point(230, 418)
+        Me.lbl_time.Location = New System.Drawing.Point(358, 400)
         Me.lbl_time.Name = "lbl_time"
         Me.lbl_time.Size = New System.Drawing.Size(29, 13)
         Me.lbl_time.TabIndex = 30
@@ -209,6 +210,7 @@ Partial Class addition_easy
         '
         'planet_img
         '
+        Me.planet_img.BackColor = System.Drawing.Color.Transparent
         Me.planet_img.BackgroundImage = CType(resources.GetObject("planet_img.BackgroundImage"), System.Drawing.Image)
         Me.planet_img.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.planet_img.Location = New System.Drawing.Point(580, 110)
@@ -229,13 +231,26 @@ Partial Class addition_easy
         Me.spacecraft_img.TabIndex = 26
         Me.spacecraft_img.TabStop = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = Global.math_game_.My.Resources.Resources.mw_hud
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.header_highscore)
+        Me.Panel1.Controls.Add(Me.highScores)
+        Me.Panel1.Location = New System.Drawing.Point(28, 296)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(291, 280)
+        Me.Panel1.TabIndex = 33
+        '
         'addition_easy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(955, 562)
-        Me.Controls.Add(Me.lbl_time)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(735, 588)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.lbl_time)
         Me.Controls.Add(Me.answer_box)
         Me.Controls.Add(Me.submit_btn)
         Me.Controls.Add(Me.answer)
@@ -251,11 +266,12 @@ Partial Class addition_easy
         Me.Controls.Add(Me.lbl_incorrect)
         Me.Controls.Add(Me.lbl_correct)
         Me.Name = "addition_easy"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Maths Game: Easy Addition"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.planet_img, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.spacecraft_img, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -275,9 +291,9 @@ Partial Class addition_easy
     Friend WithEvents lbl_remaining As System.Windows.Forms.Label
     Friend WithEvents lbl_incorrect As System.Windows.Forms.Label
     Friend WithEvents lbl_correct As System.Windows.Forms.Label
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents header_highscore As System.Windows.Forms.Label
     Friend WithEvents highScores As System.Windows.Forms.ListBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents lbl_time As System.Windows.Forms.Label
+    Friend WithEvents Panel1 As Panel
 End Class

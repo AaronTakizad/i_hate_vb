@@ -31,7 +31,6 @@ Public Class addition_easy
         game_over.Font = New Font(pfc.Families(1), 40)
         game_over.Visible = False
 
-
         '''''''''''''Setting up Highscores'''''''''''''''''
 
 
@@ -51,10 +50,12 @@ Public Class addition_easy
 
         Dim view As New DataView(dataTableScoreDetail)
 
+        highScores.Items.Add("Name:" & Chr(9) & "Score:" & Chr(9) & "Time:")
+
         view.Sort = "correct_counter desc,Time_Elapsed ASC,player_name" ' Sort items first by high score (descending), then by time elapsed (ascending), then by player name (ascending)
         For Each row As DataRowView In view 'For every row in the XML table
             If highScores.Items.Count < 3 Then ' If there are less than 3 items in the HighScores listbox, add items. (items sorted already in `view.Sort`)
-                highScores.Items.Add(row.Item("player_name") & "  " & row.Item("correct_counter") & "  " & row.Item("Time_Elapsed") & " sec")
+                highScores.Items.Add(row.Item("player_name") & Chr(9) & row.Item("correct_counter") & Chr(9) & row.Item("Time_Elapsed") & " sec")
             End If
         Next
 

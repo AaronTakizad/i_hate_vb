@@ -255,6 +255,12 @@
   <ItemGroup>
     <None Include="bin\Debug\images\fireball.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space-681627_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mw_hud.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

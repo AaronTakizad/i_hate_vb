@@ -121,3 +121,32 @@ C:\Users\Aaron\Desktop\math game\math game 2.0\obj\Debug\math game 2.0.vbproj.Ge
 C:\Users\Aaron\Desktop\math game\math game 2.0\obj\Debug\math_game_.multiplication_easy.resources
 C:\Users\Aaron\Desktop\math game\math game 2.0\obj\Debug\math_game_.multiplication_hard.resources
 C:\Users\Aaron\Desktop\math game\math game 2.0\obj\Debug\math_game_.multiplication_medium.resources
+H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.help.resources
+H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.multiplication_easy.resources
+H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.multiplication_hard.resources
+H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.multiplication_medium.resources
+H:\i_hate_vb-master\math game 2.0\obj\Debug\math_game_.summary.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.exe.config
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Interop.WMPLib.dll
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game 2.0.vbproj.ResolveComReference.cache
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game.exe
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game.xml
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game.pdb
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.exe
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.pdb
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\math game.xml
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Interop.WMPLib.dll
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game 2.0.vbprojResolveAssemblyReference.cache
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.addition_easy.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.addition_hard.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.addition_medium.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.Form1.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.help.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.multiplication_easy.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.multiplication_hard.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.multiplication_medium.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.Resources.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math_game_.summary.resources
+C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\math game 2.0.vbproj.GenerateResource.Cache

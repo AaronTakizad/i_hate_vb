@@ -233,7 +233,7 @@ Partial Class addition_hard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(955, 562)
+        Me.ClientSize = New System.Drawing.Size(735, 513)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lbl_time)
         Me.Controls.Add(Me.answer_box)
@@ -251,6 +251,7 @@ Partial Class addition_hard
         Me.Controls.Add(Me.lbl_incorrect)
         Me.Controls.Add(Me.lbl_correct)
         Me.Name = "addition_hard"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Maths Game: Hard Addition"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()

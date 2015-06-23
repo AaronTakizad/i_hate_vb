@@ -292,7 +292,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
-        Me.Text = "Maths Game: Start Screen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Maths on Mars: Start Screen"
         Me.level_group.ResumeLayout(False)
         Me.level_group.PerformLayout()
         Me.game_type_group.ResumeLayout(False)

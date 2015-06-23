@@ -28,9 +28,10 @@ Partial Class help
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(411, 329)
         Me.Name = "help"
-        Me.Text = "help"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.Text = "Maths on Mars: Help Screen"
         Me.ResumeLayout(False)
 
     End Sub

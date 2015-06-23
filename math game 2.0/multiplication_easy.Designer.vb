@@ -233,7 +233,7 @@ Partial Class multiplication_easy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(955, 562)
+        Me.ClientSize = New System.Drawing.Size(735, 513)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lbl_time)
         Me.Controls.Add(Me.answer_box)
@@ -251,7 +251,8 @@ Partial Class multiplication_easy
         Me.Controls.Add(Me.lbl_incorrect)
         Me.Controls.Add(Me.lbl_correct)
         Me.Name = "multiplication_easy"
-        Me.Text = "multiplication_easy"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Maths on Mars: Easy Multiplication"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.planet_img, System.ComponentModel.ISupportInitialize).EndInit()
