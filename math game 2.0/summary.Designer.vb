@@ -29,6 +29,7 @@ Partial Class summary
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.math_game_.My.Resources.Resources.bg5
         Me.ClientSize = New System.Drawing.Size(451, 359)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "summary"

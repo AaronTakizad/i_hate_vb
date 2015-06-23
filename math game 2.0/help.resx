@@ -117,6 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>1. Enter your name in the field provided
+
+2. Select the level of difficulty. Note:
+• Easy ranges from numbers 1-10
+• Medium ranges from numbers 1-25
+• Hard ranges from numbers 1-100
+
+3. Select either the addition or
+multiplication game type.
+
+4. If the progress bar is 100% completed,
+you are ready to begin. Click "Let's go!"</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
