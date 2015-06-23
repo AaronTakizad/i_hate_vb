@@ -150,3 +150,10 @@ C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\bin\Debug\Maths on Mars.xml
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Maths on Mars.exe
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Maths on Mars.xml
 C:\Users\aaron\Desktop\i_hate_vb\math game 2.0\obj\Debug\Maths on Mars.pdb
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\bin\Debug\Maths on Mars.exe.config
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Interop.WMPLib.dll
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\math game 2.0.vbproj.ResolveComReference.cache
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Maths on Mars.exe
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Maths on Mars.xml
+C:\Users\aaron\Desktop\maths_on_mars\math game 2.0\obj\Debug\Maths on Mars.pdb

@@ -1,9 +1,5 @@
 ﻿Imports System.Drawing.Text
 Imports System.IO
-Public Module public_a_e
-    Public correct_counter As Integer = 0
-    Public answered As Integer = 0
-End Module
 Public Class addition_easy
     Dim pfc As PrivateFontCollection = New PrivateFontCollection()
     Dim incorrect_counter As Integer = 0
@@ -11,6 +7,8 @@ Public Class addition_easy
     Dim dynamic_travel_distance As Integer
     Dim time_passed As Integer = 0
     Dim dataTableScoreDetail As New DataTable
+    Dim correct_counter As Integer = 0
+    Dim answered As Integer = 0
 
     Private Sub addition_easy_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         Timer1.Start()
@@ -133,7 +131,11 @@ Public Class addition_easy
 
             'End Try
 
-            summary.Show()
+            If correct_counter / answered * 100 >= 80 Then
+                over80_summary.Show()
+            Else
+                under80_summary.Show()
+            End If
         End If
     End Sub
     Private Sub close_program(sender As Object, e As EventArgs) Handles MyBase.FormClosed

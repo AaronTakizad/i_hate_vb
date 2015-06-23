@@ -131,7 +131,11 @@ Public Class multiplication_easy
 
             'End Try
 
-            summary.Show()
+            If correct_counter / answered * 100 >= 80 Then
+                over80_summary.Show()
+            Else
+                under80_summary.Show()
+            End If
         End If
     End Sub
     Private Sub close_program(sender As Object, e As EventArgs) Handles MyBase.FormClosed
