@@ -1,2 +1,4 @@
-# i_hate_vb
-I really, really don't like VB. Thanks, preliminary SDD!
+# Maths on Mars
+
+This project and its Git commits are hosted and available on:<br>
+https://github.com/AaronTakizad
